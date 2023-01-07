@@ -13,7 +13,8 @@ class ChatItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       title: Text(
-        item.get('body'),
+        //item.get('body'),
+        item.get('field').toString(),
         textAlign: item.get('sender') == 'me' ? TextAlign.end : TextAlign.start,
       ),
     );
