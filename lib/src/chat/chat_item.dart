@@ -14,7 +14,7 @@ class ChatItem extends StatelessWidget {
     return ListTile(
       title: Text(
         //item.get('body'),
-        item.get('field').toString(),
+        item.get('body').toString(),
         textAlign: item.get('sender') == 'me' ? TextAlign.end : TextAlign.start,
       ),
     );
